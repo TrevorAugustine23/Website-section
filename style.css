@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-image: url("/globe3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+  display: flex;
+}
+.solutions {
+  line-height: 1.5;
+  /* border: 1px solid red; */
+  margin: 45px;
+  height: 90vh;
+  padding-top: 200px;  
+}
+.solutions p{
+    font-size: 14px;
+}
+.solutions button{
+    background-color: orange;
+    padding: 20px 3px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+.solutions button:hover{
+    /* color:red; */
+    opacity: 70%;
+    cursor: pointer;
+    /* background-color: lightsalmon !important; */
+}
+
+.cards {
+  display: flex;
+  
+}
+.left-cards{
+    border: 1px solid red;
+}
+.right-cards{
+    border: 1px solid green;
+    padding-top: 150px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  margin: 25px;
+  position: relative;
+  width: 10rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.card a {
+  /* text-align: center; */
+    text-decoration: underline;
+    color: orange;
+}
+.card .logo_card {
+  /* text-align: center; */
+  padding: 12px;
+
+}
+
+.card .header_card {
+  /* text-align: center; */
+  font-size: 14px;
+}
+.card .content_card {
+  /* text-align: center; */
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.card_1 {
+    margin-bottom: 100px;
+ 
+}
+
+.card_2 {
+  
+}
+.card_3 {
+  
+}
+.card_4 {
+  margin-bottom: 100px;
+}
+.card_5 {
+  
+}
+
+.card_6 {
+  
+}
+
