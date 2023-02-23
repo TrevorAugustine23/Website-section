@@ -2,61 +2,67 @@
 
 * {
   margin: 0;
+  scroll-behavior: smooth;
   padding: 0;
   font-family: "Raleway", sans-serif;
 }
 body {
-  background-image: url("/globe3.png");
+  background-image: url("images/globe3.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  /* height: 100%; */
   background-size: cover;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
   display: flex;
 }
+.header {
+  height: 25vh;
+  width: 98.72vw;
+  position: absolute;
+}
+.header.sticky {
+  position: sticky;
+  top: 0;
+}
 .solutions {
   line-height: 1.5;
-  /* border: 1px solid red; */
   margin: 45px;
   height: 90vh;
-  padding-top: 200px;  
+  padding-top: 200px;
 }
-.solutions p{
-    font-size: 14px;
+.solutions p {
+  font-size: 14px;
 }
-.solutions button{
-    background-color: orange;
-    padding: 20px 3px;
-    margin-top: 20px;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
+.solutions button {
+  background-color: orange;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
 }
-.solutions button:hover{
-    /* color:red; */
-    opacity: 70%;
-    cursor: pointer;
-    /* background-color: lightsalmon !important; */
+.solutions button:hover {
+  opacity: 70%;
+  cursor: pointer;
 }
 
 .cards {
   display: flex;
-  
 }
-.left-cards{
-    border: 1px solid red;
+.left-cards {
+  margin-left: 110px;
 }
-.right-cards{
-    border: 1px solid green;
-    padding-top: 150px;
+.right-cards {
+  margin-left: -30px;
+  padding-top: 150px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -69,49 +75,122 @@ a{
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
 }
 .card a {
-  /* text-align: center; */
-    text-decoration: underline;
-    color: orange;
+  text-decoration: underline;
+  color: orange;
 }
 .card .logo_card {
-  /* text-align: center; */
-  padding: 12px;
-
+  padding: 20px;
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 40px;
 }
-
+.card .logo_card img {
+  max-width: 100%;
+  height: auto;
+}
 .card .header_card {
-  /* text-align: center; */
   font-size: 14px;
 }
 .card .content_card {
-  /* text-align: center; */
   font-size: 12px;
   line-height: 1.5;
 }
 
 .card_1 {
-    margin-bottom: 100px;
- 
+  margin-bottom: 45px;
 }
-
 .card_2 {
-  
-}
-.card_3 {
-  
-}
-.card_4 {
-  margin-bottom: 100px;
+  margin-bottom: -10px;
 }
 .card_5 {
-  
+  margin-bottom: -10px;
 }
-
-.card_6 {
-  
+.card_4 {
+  margin-bottom: 45px;
 }
+.footer {
+  /* border: 1px solid red; */
+  margin-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 600px;
+  line-height: 1.5;
 
+  width: 300px;
+  height: 120px;
+}
+.footer h1 {
+  text-align: left;
+}
+.footer p {
+  text-align: justify;
+}
+.partners {
+  /* border:1px solid red; */
+  display: flex;
+  height: 200px;
+  width: 540px;
+  margin: 10px;
+  position: relative;
+  top: -900px;
+  flex-direction: column;
+}
+.partners img {
+  height: 180px;
+  width: 180px;
+  /* border: 1px solid red; */
+}
+.access {
+  margin-bottom: 90px;
+  margin-left: 400px;
+}
+.ecobank {
+  margin-left: 50px;
+}
+.nedbank {
+  margin-left: 380px;
+  margin-top: -130px;
+}
+.mastercard {
+  margin-left: 200px;
+  margin-top: -50px;
+}
+.bankabc {
+  margin-left: 50px;
+}
+.visa {
+  margin-left: 200px;
+}
+.kcb {
+  margin-left: 50px;
+}
+.eft {
+  margin-left: 380px;
+  margin-top: -100px;
+}
+.dzcard {
+  margin-left: 380px;
+  margin-top: -340px;
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
